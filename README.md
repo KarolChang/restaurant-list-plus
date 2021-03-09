@@ -48,7 +48,7 @@
 
 2. 進入專案資料夾
 
-   > `cd restaurant_list_crud`
+   > `cd restaurant_list_plus`
 
 3. 安裝 npm 套件
 
