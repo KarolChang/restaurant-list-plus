@@ -44,11 +44,11 @@
 
 1. 開啟終端機，執行以下指令 :
 
-   > `git clone https://github.com/KarolChang/restaurant_list_plus.git`
+   > `git clone https://github.com/KarolChang/restaurant-list-plus.git`
 
 2. 進入專案資料夾
 
-   > `cd restaurant_list_plus`
+   > `cd restaurant-list-plus`
 
 3. 安裝 npm 套件
 
@@ -59,6 +59,7 @@
    > `npm install -g nodemon`
 
 5. 使用腳本啟動專案
+
    (1) 新增種子資料
 
    > `npm run seed`
