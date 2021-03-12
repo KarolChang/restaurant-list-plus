@@ -16,7 +16,8 @@
 <body>
   {{!-- Navbar --}}
   <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/" style="margin-left: 20px;">{{#if isAuthenticated}}{{user.name}}'s{{/if}} Restaurant
+    <a class="navbar-brand" href="/" style="margin-left: 20px;">{{#if isAuthenticated}}{{#if
+      user.name}}{{user.name}}'s{{/if}}{{/if}} Restaurant
       List</a>
     {{#if isAuthenticated}}
     <a href="/users/logout" class="btn btn-outline-light">Logout</a>
