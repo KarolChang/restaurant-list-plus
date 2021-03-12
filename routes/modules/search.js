@@ -6,7 +6,8 @@ const Restaurant = require('../../models/restaurant.js')
 router.get('/', (req, res) => {
   const restaurant = []
   const keyword = req.query.keyword
-  Restaurant.find().lean()
+  const userId = req.user._id
+  Restaurant.find({ userId }).lean()
     .then(restaurants => {
       restaurants.forEach(store => {
         if (store.name.toLowerCase().includes(keyword.toLowerCase())) {

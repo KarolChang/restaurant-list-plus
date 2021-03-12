@@ -35,5 +35,5 @@ function generateData (userInfo, index_one, index_two) {
   })
 }
 
-generateData (SEED_USER_ONE, 0, 3)
-generateData (SEED_USER_TWO, 3, 6)
+generateData(SEED_USER_ONE, 0, 3)
+generateData(SEED_USER_TWO, 3, 6)

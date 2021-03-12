@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
 // function
 function sortRestaurant(sort, sortWay, res, sortName, req) {
   const userId = req.user._id
-  Restaurant.find({ userId })
+  return Restaurant.find({ userId })
     .lean()
     .sort({ [sort]: sortWay })
     .then(restaurant => res.render('index', { restaurant, sortName }))
@@ -38,5 +38,3 @@ function sortRestaurant(sort, sortWay, res, sortName, req) {
 }
 
 module.exports = router
-
-
