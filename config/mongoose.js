@@ -1,7 +1,8 @@
 // require mongoose
 const mongoose = require('mongoose')
+const MONGODB_URI = process.env.MONGODB_URI
 // connect to mongodb
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 // get status of connection
 const db = mongoose.connection
 // set action of connection
